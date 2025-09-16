@@ -18,7 +18,7 @@ terraform_proxmox9.0-main/
 
 ## ⚙️ Prérequis
 
-- Un cluster **Proxmox** fonctionnel (version 7.x ou 8.x compatible avec Terraform provider).
+- Un **Proxmox** fonctionnel (version 9.x compatible avec Terraform provider).
 - **Terraform** installé sur votre poste (Windows ou Linux).
 - Accès SSH/API à votre Proxmox.
 - Un utilisateur Proxmox dédié à Terraform (géré via `terraform_user.sh`).
@@ -26,7 +26,7 @@ terraform_proxmox9.0-main/
 ## 🚀 Installation
 
 ### Sous Windows
-Exécuter le script PowerShell suivant pour installer Terraform :
+Exécuter en tant qu'Admin, le script PowerShell suivant pour installer Terraform :
 
 ```powershell
 ./install_terraform.ps1
@@ -73,4 +73,4 @@ chmod +x terraform_user.sh
 - [Proxmox Provider](https://registry.terraform.io/providers/Telmate/proxmox/latest)
 
 ---
-✍️ Auteur : **Kansei Business**
+✍️ Auteur : **Hexaltech**
