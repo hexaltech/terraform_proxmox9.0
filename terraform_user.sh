@@ -1,4 +1,3 @@
-pveum user add terraform@pve
-pveum role add TerraformRole -privs "Datastore.Allocate VM.Allocate VM.Audit VM.Config.Disk VM.Config.CDROM VM.Config.CPU VM.Config.Memory VM.Config.Network VM.Config.Options VM.Console VM.Migrate VM.PowerMgmt Sys.Audit Sys.Modify"
-pveum aclmod / -user terraform@pve -role TerraformRole
-pveum user token add terraform@pve terraform-token --privsep=0
+pveum user add terraform@pam --password 'MotDePasseSecurisé123!'
+pveum acl modify / --user terraform@pam --role Administrator
+pveum user token add terraform@pam terraform-token --comment "Token Terraform"
